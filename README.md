@@ -1,1 +1,1 @@
-# ghustech.github.io
+# ghustech
