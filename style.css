@@ -1,0 +1,159 @@
+body{
+    /*
+    background-color: rgb(100, 149, 237); atau #6495ED 
+    background-image: url(gambar/GUNDAR.JPG);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 50%;
+    background-position: center;
+    */
+    background:  #F5F5DC url(gambar/GUNDAR.JPG)  no-repeat fixed right;
+    background-size: 25%;
+    font-family: serif;
+}
+
+h1{
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+    text-transform: uppercase;
+    /*visibility: hidden; =untuk menyembunyikan konten
+    display: none;= untuk menghilangkan konten*/
+}
+
+h2{
+    color: blue;
+    text-align: center;
+    text-decoration: underline;
+}
+
+#panjang{
+    text-align: justify;
+    text-indent: 30px; /*tab awal kalimat*/
+    letter-spacing: 2px;
+    line-height: 20px;
+    word-spacing: 5px;
+}
+
+#pendek{
+    font-size: 24px;
+    font-weight: bold;
+    width: 50%;
+    background-color: yellow;
+    height: 50px;
+}
+
+#menu_wrap{
+    /* margin-bottom: 50px; margin=jarak antar elemen , padding=jarak konten ke garis luar, border=garis elemen
+    margin-left: 50px; */     
+    margin: 20px 0 50px 0;
+}
+
+.menu{
+    display: inline-block;
+    /*height: 50px;
+    width: 75px;*/
+    text-align: center;
+
+    border: 3px solid black;
+    padding: 10px;
+}
+
+.menu:link{
+    background: yellow;
+    color: white;
+    text-decoration: none;
+}
+
+.menu:visited{
+    background: greenyellow;
+}
+
+.menu:hover{
+    background: blue;
+}
+
+.menu:active{
+    background: grey;
+}
+
+/*posisi static= tata letak mengikuti urutan baris html
+  posisi relative= tata letak mengikuti jarak yg diatur dari  position: relative , top n left
+  posisi absolute= sifat ini menganggap elemen yg diatur jarak jika bertabrakan dengan elemen lain, maka elemen yg diatur akan dianggap tak ada walaupun masih terlihat
+  posisi fixed= posisi yg mengatur elemen agar ketika discroll maka akan tetap tampil di jarak semula
+  
+#h1_member{
+    width: 100%;
+    position: fixed;
+    top: 80px;
+    background: yellow;
+    z-index: -1;  mengatur urutan layer agar terlihat atau tidaknya
+}
+
+#h2_member{
+    position: absolute;
+    top: 120px;
+    z-index: 1;
+}
+
+/*absolute tergantung parents nya, dan relative tergantung browser*/  
+ 
+table{
+    float: left;
+    margin-right: 20px;
+}
+
+/*#div_baru{
+    clear: both; 
+} untuk menghilangkan float diantara dua elemen sebelum dan sesudah*/ 
+
+
+ul, ol, dl{
+   float: left;
+   margin: 0px;
+   padding: 0px;
+   width: 33.33%;
+}
+    
+#copyright{
+    clear: both;
+    text-align: center;
+    padding-top: 100px;
+}
+
+/*'div > a'(hanya menyeleksi tag a setelah div, jika div>span>a maka tidak termasuk
+'div + div' artinya menyeleksi tag div setelah div
+'p + div' artinya meneyeleksi tag div setelah tag p
+'div ~ p artinya menyeleksi semua tag p setelah tag div'*/
+
+div ~ p{
+    background-color: red;
+}
+    
+
+/*
+HOVER
+keadaan ketika mouse berada pada elemen tertentu
+1.diri sendiri
+2.elemen lain
+    > langsung didalam
+    + langsung setelah
+    (space) berada disuatu tempat (dalam container)
+
+FOCUS
+keadaan ketika input di klik
+*/
+
+h1:hover{
+    color: black;
+}
+
+h1:hover + h2{
+    color: black;
+}
+    
+input:focus, textarea:focus{
+    background-color: aqua;
+}
+
+
